@@ -1,0 +1,904 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --blue: #007bff;
+    --yellow: #ffc107;
+    --white: #fff;
+    --gray-dark: #343a40;
+    --azraa--: #04091e;
+}
+.blue{
+    color: #007bff !important;
+}
+p , h1,h2,h3,h4,h5 ,a ,button ,input{
+    transition: 1s !important;
+}
+span{
+    color: #52c5fd;
+}
+/* ----------------i will Start Frest-Parent------------- */
+.parent{
+    width: 100%;
+    height: 120vh;
+    background-image: url(../Picture/banner_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.parent .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+.parent .container .box-card{
+    width: 100%;
+    height: 70%;
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .container .box-card .card{
+    width: 580px;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* border: 3px solid brown; */
+    text-align: center;
+    color: #fff;
+}
+.parent .container .box-card .card h1{
+    font-size: 70px;
+}
+.parent .container .box-card .card a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #e2b221;
+    font-size: 14px;
+}
+.parent .container header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all;
+    z-index: 1;
+}
+.parent .container nav{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    /* border: 3px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    transition: 1s all;
+    position: relative;
+}
+ul , li{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+.parent .container nav img{
+    width: 150px;
+    height: 30px;
+}
+.parent .container nav a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.parent .container .time-data{
+    width: 85%;
+    height: 20%;
+    /* border: 3px solid brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azraa--);
+    color: #fff;
+    flex-wrap: wrap;
+    border-radius: 20px 20px 0 0;
+}
+.parent .container .time-data form{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 3px    solid black; */
+    gap: 30px;
+}
+.parent .container .time-data form .data-type{
+    width: 200px;
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* border: 3px solid gold; */
+}
+.parent .container .time-data form .data-type input{
+    padding: 5px 0;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    background-color: transparent;
+    /* border-color: 1px #fff solid; */
+    outline: #fff 1px solid;
+    text-align: center;
+}
+.parent .container .time-data form .data-type ::placeholder{
+    text-align: center;
+}
+.parent .container .time-data form .data-type a{
+    text-decoration: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #e2b221;
+    padding: 8px 0;
+    color: black;
+    text-align: center;
+}
+.parent .container .time-data .text{
+    /* border: 3px solid green; */
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+/* ----------------End Frest-Parent------------- */
+/* ----------------NavBar Menu-------------- */
+.menu{
+    display: none;
+    background-color: transparent;
+    color: #ffc107;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.xxa{
+    display: none;
+    background-color: transparent;
+    color: #ffc107;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* --------------End NavBar Menu-------------- */
+
+/* ----------------i will Start Two-Parent------------- */
+.two-parent{
+    width: 100%;
+    height: 100vh;
+}
+.two-parent .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+}
+.two-parent .container .text-paragraph{
+    width: 70%;
+    height: 15%;
+    /* border: 3px solid brown; */
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.two-parent .container .parent-card{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.two-parent .container .parent-card .push-data{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* border: 3px solid black; */
+    gap: 20px;
+    overflow-x: auto;
+    z-index: 0;
+}
+.two-parent .container .parent-card .push-data::-webkit-scrollbar{
+    width: 0; 
+}
+.two-parent a{
+    font-size: 13px !important;
+    padding: 8px 40px;
+    background-color: #343a40;
+}
+.show{
+    display: flex !important;
+}
+.hidding{
+    display: none !important;
+}
+.two-parent .container .parent-card .card{
+    min-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s; 
+    z-index: 0;
+    gap: 11px;
+}
+.two-parent .container .parent-card .card .box-img{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+/* .two-parent .container .parent-card .card .inside-img{
+    position: absolute;
+    text-decoration: none;
+    width: 150px;
+    font-size: 14px;
+    background-color: #ffc107;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    bottom: 8%;
+    border-radius: 4px;
+} */
+.two-parent .container .parent-card .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: 1s;
+}
+.two-parent .container .parent-card .card a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* ---------------- End Start Two-Parent------------- */
+
+/* ----------------i will Start Three-Parent------------- */
+.three-parent{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Picture/facilites_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.three-parent .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #04091ea8;
+}
+.three-parent .text-paragraph{
+    width: 80%;
+    height: 15%;
+    /* border: 3px solid brown; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.three-parent .push-data{
+    width: 80%;
+    height: 78%;
+    /* border: 3px solid black; */
+    gap: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+.three-parent .push-data::-webkit-scrollbar{
+    width: 0;
+}
+.three-parent .push-data .card{
+    width: 300px;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 white;
+}
+.three-parent .push-data .card .paragraph{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.three-parent a{
+    text-decoration: none;
+    background-color: #e2b221;
+    padding: 2px 25px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #fff;
+}
+.three-parent .push-data .box-img{
+    width: 100%;
+    height: 70%;
+}
+.three-parent .push-data .box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/* ---------------- End Three-Parent------------- */
+
+/* ----------------i will Start Four-Parent------------- */
+.four-parent{
+    width: 100%;
+    height: 100vh;
+}
+.four-parent .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.four-parent .container .card{
+    width: 500px;
+    height: 500px;
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+.four-parent .card a{
+    text-decoration: none;
+    background-color: #343a40;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 14px;
+}
+.four-parent .card:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+}
+/* ---------------- End Four-Parent------------- */
+
+/* ----------------i will Start Five-Parent------------- */
+.five-parent{
+    width: 100%;
+    height: 100vh;
+}
+.five-parent .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.five-parent .paragraph{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.five-parent .paragraph h1{
+    font-size: 40px;
+}
+.five-parent .container .cards{
+    width: 70%;
+    height: 40%;
+    /* border: 3px solid brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: auto;
+}
+.five-parent .cards::-webkit-scrollbar{
+    width: 0;
+}
+.five-parent .box-card{
+    /* border: 3px solid black; */
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   gap: 30px;
+}
+.five-parent .every-card{
+    height: 200px;
+    min-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 1px 0px;
+}
+.five-parent .stars{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+.five-parent .colum{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+/* ---------------- End Five-Parent------------- */
+
+/* ----------------i will Start Six-Parent------------- */
+.six-parent{
+    width: 100%;
+    height: 100vh;
+}
+.six-parent .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.six-parent .paragraph{
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.six-parent .box-container{
+    width: 90%;
+    height: 75%;
+    /* border: 3px solid brown; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.six-parent .links{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.six-parent .left{
+    text-decoration: none;
+    background-color: #fff;
+    color: #04091e;
+    outline: #d1d2d396 1px solid !important;
+    padding: 3px 15px;
+    font-size: 12px !important;
+    font-weight: 600;
+}
+.six-parent .card{
+    height: 490px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+}
+.six-parent .box-img{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+.six-parent .box-img img{
+    width: 100%;
+    height: 100%;
+}
+/* ---------------- End Six-Parent------------- */
+
+/* ----------------i will Start seven-Parent------------- */
+.seven-parent{
+    width: 100%;
+    height: 90vh;
+    background-color: #04091e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seven-parent .container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.seven-parent .box-card{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.527);
+}
+.seven-parent .card{
+    /* border: 3px solid gold; */
+    width: 350px;
+    height: 250px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; 
+}
+.seven-parent .card p {
+    width: 70%;
+}
+.seven-parent .search{
+    height: 15%;
+    /* border: 3px gold solid; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+}
+.seven-parent input{
+    width: 60%;
+    padding: 8px 0;
+    text-align: center;
+    background-color: transparent;
+    outline: #fff 0.1px solid;
+    color: #fff;
+    border: none;
+}
+.seven-parent .search button{
+    background-color: #ffc107;
+    font-size: 20px;
+    width: 10%;
+    height: 91%;
+    
+}
+.seven-parent .box-img{
+    width: 80%;
+    height: auto;
+}
+.seven-parent .footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.seven-parent .icon{
+    /* border: 3px solid green; */
+    width: 20%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+.seven-parent button{
+    font-size: 20px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.seven-parent .footer span{
+    color: #ffc107;
+    font-style: italic;
+}
+.seven-parent .footer h4{
+    font-style: italic;
+}
+/* ---------------- End end-Parent------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------i will Start Hover For Classess---------- */
+.hover-img:hover{
+    transition: 1s;
+    transform: scale(1.2) rotate(-2deg);
+}
+.parent .container nav a:hover{
+    color: #007bff;
+    transform: 0 !important;
+}
+.five-parent h2:hover{
+    color: #007bff;
+    transform: 0 !important;
+    cursor: pointer;
+}
+.six-parent h3:hover{
+    color: #007bff;
+    transform: 0 !important;
+    cursor: pointer;
+}
+.five-parent .star{
+    background-color: transparent;
+    color: #ffc107;
+    border: none;
+}
+.seven-parent .icon button:hover{
+    transform: rotate(360deg) scale(1.4);
+    color: #ffc107;
+}
+.seven-parent a:hover{
+    transform: rotate(360deg) scale(1.4);
+    color: #ffc107;
+}
+.seven-parent a{
+    text-decoration: none;
+    color: #fff;
+}
+/* New Line */
+
+.left {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  .left {
+    z-index: 0;
+    color: white;
+  }
+  .left:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: #f3c300;
+    transition: all 1s ease;
+  }
+  .left:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .left:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .left:active {
+    top: 2px;
+  }
+/* ------------- End Hover For Classess---------- */
+
+
+
+
+
+
+
+
+
+/* --------------Media Query 1150 pxel--------------- */
+@media (max-width: 1150px){
+    .parent{
+        height: auto;
+    }
+    .four-parent{
+        height: auto;
+    }
+    .four-parent .container{
+        flex-direction: column-reverse;
+        padding: 40px 0;
+    }
+    .five-parent{
+        height: auto;
+    }
+    .six-parent{
+        height: auto;
+        padding: 20px;
+    }
+    .seven-parent{
+        height: auto;
+    }
+}
+/* --------------Media Query 900 pxel--------------- */
+@media (max-width: 900px){
+    .parent{
+        height: auto;
+    }
+    .parent .container header nav .links {
+        display: none;
+        height: 500px;
+        width: 100%;
+        /* border: 3px solid brown; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff59;
+        padding: 20px 0;
+        transition: 1s;
+    }
+    .parent .container header{
+        z-index: 55;
+    }
+    
+    .parent .container header nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent .container header nav .logo{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        flex-direction: row;
+        /* border: 3px solid black; */
+    } 
+    .parent .container .time-data form .data-type input{
+        padding: 5px 20px;
+        transition: 1s;
+        margin: 5px 0;
+    }
+    .parent .container .box-card .card p{
+        font-size: 15px;
+    }
+    .parent .container .box-card .card h1{
+        font-size: 50px;
+    }
+    .parent .container .time-data form .data-type a{
+        padding: 5px 30px;
+        transition: 1s all;
+        margin-bottom: 10px;
+    }
+    .parent .container  .menu{
+        display: flex;
+      
+    }
+    .two-parent .container .parent-card .card{
+        min-width: 530px;
+        transition: 1s;
+    }
+    .four-parent{
+        height: auto;
+    }
+    .four-parent .container{
+        padding: 40px 0;
+    }
+    .five-parent{
+        height: auto;
+    }
+    .five-parent .paragraph p{
+        width: 80%;
+        text-align: center;
+    }
+    .five-parent .paragraph h1{
+        font-size: 30px;
+    }
+}
+/* --------------Media Query 590 pxel--------------- */
+@media (max-width: 590px){
+    .parent .container .box-card .card p{
+        width: 80%;
+        font-size: 13px;
+    
+    }
+    .parent .container .box-card .card h1{
+        font-size: 35px;
+     
+    }
+    .two-parent .container .parent-card .card{
+        min-width: 330px;
+        transition: 1s;
+    }
+    .five-parent .paragraph p{
+        width: 70%;
+        text-align: center;
+    }
+    .four-parent{
+        height: auto;
+    }
+    .four-parent .container .card {
+       width: 300px;
+    }
+    .five-parent .paragraph h1{
+        font-size: 25px;
+    }
+}
