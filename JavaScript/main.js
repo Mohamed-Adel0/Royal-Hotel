@@ -13,7 +13,7 @@ async function display (){
     let cartoon =``
     for (let i = 0; i < dataApi.length; i++) {
         
-        if (dataApi[i].urlToImage !== null && dataApi[i].title && dataApi[i].description) {
+        if (dataApi[i].urlToImage !== null && dataApi[i].title !==null && dataApi[i].description !==null) {
             cartoon +=`
             
             <div class="card">
@@ -37,27 +37,27 @@ async function display (){
 let api = 0
 
 async function Sport (){
-    let xdata = await fetch(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=0bcb3e7c83b4412c9e0b4b24ae3481d2`)
-    api = (await xdata.json()).articles
+    let xdata = await fetch(`https://fakestoreapi.com/products`)
+    api = (await xdata.json())
     dataType()
 }
 Sport()
 async function dataType (){
     paragraph =``
     for (let i = 0; i < api.length; i++) {
-    if (api[i].urlToImage !== null) {
+    if (api[i].image !== null) {
         
         paragraph +=`
         <div class="card">
             
           <div class="box-img">  
-            <img src="${api[i].urlToImage}" alt="Error">
+            <img src="${api[i].image}" alt="Error">
         
           </div>  
           <div class="paragraph">
-          <h3>${api[i].author}</h3>
-            <p>${api[i].title.split(" ").splice(0,4).join(" ")}</p>
-            <a class="left" href="${api[i].url}">Click Here</a>
+          <h3>${api[i].category}</h3>
+            <p>${api[i].description.split(" ").splice(0,4).join(" ")}</p>
+            <a class="left" href="#">Click Here</a>
             </div>
          </div>
         `
