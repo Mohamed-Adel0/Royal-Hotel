@@ -1,30 +1,74 @@
 
 
-let dataApi = 0
-async function Menu (){
-    let inforApi= await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=0bcb3e7c83b4412c9e0b4b24ae3481d2`)
-    dataApi = (await inforApi.json()).articles
-    display()
-}    
-Menu()
 
-async function display (){
+let fakeApi = [
+    {
+        "id": 1,
+        "name": "Clothes",
+        "image": "https://picsum.photos/640/640?r=3993",
+        "creationAt": "2023-08-31T00:59:30.000Z",
+        "updatedAt": "2023-08-31T00:59:30.000Z"
+        },
+        {
+        "id": 2,
+        "name": "Electronics",
+        "image": "https://picsum.photos/640/640?r=876",
+        "creationAt": "2023-08-31T00:59:30.000Z",
+        "updatedAt": "2023-08-31T00:59:30.000Z"
+        },
+        {
+        "id": 3,
+        "name": "Change title",
+        "image": "https://picsum.photos/640/640?r=2815",
+        "creationAt": "2023-08-31T00:59:30.000Z",
+        "updatedAt": "2023-08-31T17:32:59.000Z"
+        },
+        {
+        "id": 4,
+        "name": "Shoes",
+        "image": "https://picsum.photos/640/640?r=7074",
+        "creationAt": "2023-08-31T00:59:30.000Z",
+        "updatedAt": "2023-08-31T00:59:30.000Z"
+        },
+        {
+        "id": 5,
+        "name": "Others",
+        "image": "https://picsum.photos/640/640?r=5649",
+        "creationAt": "2023-08-31T00:59:30.000Z",
+        "updatedAt": "2023-08-31T00:59:30.000Z"
+        },
+        {
+        "id": 12,
+        "name": "Tools",
+        "image": "https://picsum.photos/640/640?r=3874",
+        "creationAt": "2023-08-31T13:01:06.000Z",
+        "updatedAt": "2023-08-31T13:01:06.000Z"
+        },
+        {
+        "id": 13,
+        "name": "Config",
+        "image": "https://picsum.photos/640/640?r=2815",
+        "creationAt": "2023-08-31T14:09:52.000Z",
+        "updatedAt": "2023-08-31T14:09:52.000Z"
+        },
+]
+function display (){
     
     let cartoon =``
-    for (let i = 0; i < dataApi.length; i++) {
+    for (let i = 0; i < fakeApi.length; i++) {
         
-        if (dataApi[i].urlToImage !== null && dataApi[i].title !==null && dataApi[i].description !==null) {
+        if (fakeApi[i].image !== null && fakeApi[i].name !==null ) {
             cartoon +=`
             
             <div class="card">
             
           <div class="box-img">  
-            <img class="hover-img" src="${dataApi[i].urlToImage}" alt="Error">
+            <img class="hover-img" src="${fakeApi[i].image}" alt="Error">
           </div>  
           
-          <h3>${dataApi[i].title.split(" ").splice(0,3).join(" ")}</h3>
-          <p>${dataApi[i].description.split(" ").splice(0,4).join(" ")}</p>
-          <a class="left" href="${dataApi[i].url}">Click Here</a>
+          <h3>${fakeApi[i].name.split(" ").splice(0,3).join(" ")}</h3>
+          <p></p>
+          <a class="left" href="${fakeApi[i].url}">Click Here</a>
          </div>
          ` 
         } 
@@ -32,6 +76,7 @@ async function display (){
     }    
     
 }  
+display()
 // 2nd Data in Api
 
 let api = 0
